@@ -69,14 +69,14 @@ namespace Collection
                         if(choice == 1)
                         {
                             if (dictionary.ContainsKey(search))
-                                Console.WriteLine(" '{0}' - '{1}'", search, dictionary[search]);
+                                Console.WriteLine(search + " - " + dictionary[search]);
                             else
                                 Console.WriteLine("Failed.");
                         }
                         else
                         {
                             if (dictionary.ContainsValue(search))
-                                Console.WriteLine(" '{0}' - '{1}'", dictionary[search], search);
+                                Console.WriteLine(dictionary[search] + " - " + search);
                             else
                                 Console.WriteLine("Failed.");
                         }
